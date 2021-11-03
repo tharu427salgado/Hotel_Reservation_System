@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>
+        Gallery
+    </title>
+</head> 
+<style>
+    #nav{
+        width: 19%;
+        display: inline-block;
+        background: #429cd6;
+        border: 1px solid #3c87b2;
+
+    }
+    #page-content{
+        width: 79%;
+        display: inline-block;
+        vertical-align: top;
+        padding: 8px;
+        padding-top: 0px;
+    }
+    ul{
+        list-style: none;
+        padding-right: 10px;
+    }
+    li{
+        background-color: #ffffff;
+        color: white;
+        margin: 5px;
+        text-decoration: none;
+        text-align: center;
+        padding: 3px;
+        font-size: 20px;
+        font-family: 'Helvetica', sans-serif;
+    }
+    a{
+        color: black;
+        text-decoration: none;
+    }
+</style>
+<!-- Load AngularJS and Angular Route JS -->
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-route.js"></script>
+
+<body ng-app="myApp">
+
+<!-- AngularJS Navigation -->    
+<div id="nav">
+    <ul>
+        <li><a href="#!home">Home</a></li>
+        <li><a href="#!aboutUs">About Us</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#!rooms">Rooms</a></li>
+        <li><a href="#!ourAmenities">Our Amenities</a></li>
+        <li><a href="#!contact form">Contact Form</Form></a></li>
+    </ul>
+</div>
+<div id="page-content">
+    <img src="Villa logo.jpeg" alt="M & T Villa" style="float:right;width:150px;height:150px;">
+    <h1 align="center"> M&T Villa Hotel </h1>
+    <h2>Gallery</h2>
+         
+    <!-- this is where page content will be loaded -->
+    <div ng-view></div>
+</div>
+<!-- Load AngularJS Module and Angular Route Configuration -->
+<script type="text/javascript" src="script.js"></script>
+</body>
+</html>
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+img {
+  width: 33%;
+  height: 33%
+}
+</style>
+</head>
+<body>
+
+<img src="Gardenview with Pool.jpg" alt="M & T Villa">
+<img src="Bedroom.jpg" alt="M & T Villa">
+<img src="hroom.jpg" alt="M & T Villa">
+<img src="garden.jpg" alt="M & T Villa">
+<img src="pool.jpg" alt="M & T Villa">
+<img src="dining room.jpg" alt="M & T Villa">
+
+</body>
+</html>
+
+<html>
+    <body>
+        <div style="background-image: url('home\ bg.jpg');"></div>
+    </body>
+</html>
+
+<html>
+    <style>
+body {
+  background-image: url('home\ bg.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+    </style>
+</html>
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {font-family: Arial, Helvetica, sans-serif;}
+* {box-sizing: border-box;}
+
+/* Button used to open the chat form - fixed at the bottom of the page */
+.open-button {
+  background-color: #555;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  opacity: 0.8;
+  position: fixed;
+  bottom: 23px;
+  right: 28px;
+  width: 280px;
+}
+
+/* The popup chat - hidden by default */
+.chat-popup {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  right: 15px;
+  border: 3px solid #f1f1f1;
+  z-index: 9;
+}
+
+/* Add styles to the form container */
+.form-container {
+  max-width: 300px;
+  padding: 10px;
+  background-color: white;
+}
+
+/* Full-width textarea */
+.form-container textarea {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+  resize: none;
+  min-height: 200px;
+}
+
+/* When the textarea gets focus, do something */
+.form-container textarea:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Set a style for the submit/send button */
+.form-container .btn {
+  background-color: #04AA6D;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom:10px;
+  opacity: 0.8;
+}
+
+/* Add a red background color to the cancel button */
+.form-container .cancel {
+  background-color: red;
+}
+
+/* Add some hover effects to buttons */
+.form-container .btn:hover, .open-button:hover {
+  opacity: 1;
+}
+</style>
+</head>
+<body>
+    
+<button class="open-button" onclick="openForm()">Chat</button>
+
+<div class="chat-popup" id="myForm">
+  <form action="/action_page.php" class="form-container">
+    <h1>Chat</h1>
+
+    <label for="msg"><b>Message</b></label>
+    <textarea placeholder="Type message.." name="msg" required></textarea>
+
+    <button type="submit" class="btn">Send</button>
+    <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+  </form>
+</div>
+
+<script>
+function openForm() {
+  document.getElementById("myForm").style.display = "block";
+}
+
+function closeForm() {
+  document.getElementById("myForm").style.display = "none";
+}
+</script>
+
+</body>
+</html>
+
+
+<html>
+<head>
+<style>
+footer {
+  text-align: right;
+  padding: 3px;
+  background-color: rgb(4, 181, 252);
+  color: white;
+}
+</style>
+</head>
+<body>
+
+<footer>
+  <p>Call us: 011-2224448<br>
+  <a href="m&t villa hotel.com">m&t villa hotel.com</a></p>
+  <a href="m&tvillahotel@gmail.com">m&tvillahotel@gmail.com</a></p>
+  <a href="/privacy-policy?source=footer" rel="">Privacy Policy</a>
+</footer>
+
+</body>
+</html>
